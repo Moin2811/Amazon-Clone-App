@@ -4,11 +4,11 @@
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "256",
   "memory": "512",
-  "executionRoleArn": "arn:aws:iam::<977099025641>:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::977099025641:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "my-container",
-      "image": "placeholder",  // GitHub Actions will override this
+      "image": "placeholder",
       "portMappings": [
         {
           "containerPort": 80,
