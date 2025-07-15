@@ -8,15 +8,23 @@
   "containerDefinitions": [
     {
       "name": "my-container",
-      "image": "placeholder",
+      "image": "977099025641.dkr.ecr.ap-south-1.amazonaws.com/amazon-clone-app:e111aae4df1f0addde07047f0185c63b6b187e48",
       "portMappings": [
         {
           "containerPort": 80,
-          "hostPort": 80,
           "protocol": "tcp"
         }
       ],
-      "essential": true
+      "essential": true,
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/amazon-clone-task",
+          "awslogs-region": "ap-south-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
     }
   ]
 }
+
