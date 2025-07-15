@@ -17,5 +17,5 @@
       ]
     }
   ],
-  "executionRoleArn": "arn:aws:iam::<AWS_ACCOUNT_ID>:role/ecsTaskExecutionRole"
+  "executionRoleArn": "arn:aws:iam::<977099025641>:role/ecsTaskExecutionRole"
 }
